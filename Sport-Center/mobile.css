@@ -1,0 +1,11 @@
+@media screen and (max-width: 480px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .img {
+    margin: 0 auto;
+  }
+}

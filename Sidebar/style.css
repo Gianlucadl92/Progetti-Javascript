@@ -1,0 +1,114 @@
+body {
+  background-color: #343a40ff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+}
+
+.sidebar-toggle-btn {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  font-size: 2.5rem;
+  background: transparent;
+  border-color: transparent;
+  color: #f3dffb;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.close-btn {
+  font-size: 1.25rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: #ff0000;
+}
+
+.nav-links a {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 1rem 1.5rem;
+  color: #fffb13;
+  transition: all 0.2s ease;
+  margin-left: -40px;
+  text-align: center;
+}
+
+.nav-links a:hover {
+  background-color: #89949e;
+  color: #7026ba;
+  padding-left: 2.75rem;
+}
+
+.social-icons {
+  display: flex;
+  margin-left: 50px;
+  padding-bottom: 2rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: #fffb13;
+  transition: all 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: #f3dffb;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7026ba;
+  display: grid;
+  row-gap: 1rem;
+  box-shadow: 4px 5px 15px rgba(5, 6, 6, 0.4);
+  transition: all 0.2s ease;
+  transform: translate(-100%);
+}
+
+.show-sidebar {
+  transform: translate(0);
+}
+
+@media screen and (min-width: 676px) {
+  .sidebar {
+    width: 350px;
+  }
+}

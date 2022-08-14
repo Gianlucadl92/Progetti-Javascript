@@ -1,0 +1,37 @@
+body {
+  overflow-x: hidden;
+  background-color: #343a40ff;
+}
+
+img {
+  width: 350px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.button-xs {
+  background-color: #7026ba;
+  color: #fcfaff;
+  border: none;
+  border-radius: 16px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.button-xs:hover {
+  background-color: #fcfaff;
+  color: green;
+  border: 2px solid green;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}

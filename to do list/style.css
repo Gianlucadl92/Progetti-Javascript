@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #343a40ff;
+  overflow-x: hidden;
+}
+
+/* to do list  */
+.underline {
+  height: 0.25rem;
+  width: 15rem;
+  background: #fffb13;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.section-center {
+  background: rgb(67, 69, 71);
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  padding: 2rem;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 4rem;
+}
+
+.section-center:hover {
+  box-shadow: 4px 5px 15px rgba(5, 6, 6, 0.4);
+}
+
+.error {
+  margin-bottom: 1rem;
+  height: 1.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.08rem;
+  text-transform: capitalize;
+}
+
+.error-danger {
+  color: #ff0000;
+  background: rgb(67, 69, 71);
+}
+
+.error-success {
+  color: #00ff00;
+  background: rgb(67, 69, 71);
+}
+
+.to-do-form h3 {
+  color: #7026ba;
+  font-size: xx-large;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+#to-do {
+  width: 70%;
+  margin-right: 5%;
+  padding: 0.25rem;
+  padding-left: 1rem;
+  background: #89949e;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  font-size: 1rem;
+  flex: 1 0 auto;
+  color: #f2f2f3;
+}
+
+#to-do::placeholder {
+  color: #f2f2f3;
+}
+
+.submit-btn {
+  width: 20%;
+  background: #7026ba;
+  flex: 0 0 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0.25rem;
+  margin-left: 5%;
+  text-transform: capitalize;
+  border-radius: 100px;
+  cursor: pointer;
+  content: #fffb13;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+  border: none;
+}
+
+.submit-btn:hover {
+  background: #fffb13;
+  color: rgba(0, 0, 0, 0.54);
+  box-shadow: 4px 5px 15px rgba(5, 6, 6, 0.4);
+}
+
+.to-do-container {
+  margin-top: 2rem;
+  transition: all 0.2s ease;
+  visibility: hidden;
+}
+
+.show-container {
+  visibility: visible;
+}
+
+.to-do-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.to-do-item:hover {
+  background: #89949e;
+}
+
+.to-do-item:hover .title {
+  color: #343a40ff;
+}
+
+.title {
+  margin-bottom: 0;
+  color: #fcfaff;
+  letter-spacing: 2px;
+  transition: all 0.2s ease;
+}
+
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 0 0.15rem;
+  transition: all 0.2s ease;
+}
+
+.edit-btn {
+  color: #fffb13;
+}
+
+.delete-btn {
+  color: #ff0000;
+}
+
+.clear-btn {
+  text-transform: capitalize;
+  width: 10rem;
+  height: 1.5rem;
+  display: grid;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #a90000;
+  color: #a90000;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  letter-spacing: 0.08rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1.25rem;
+}
+
+.clear-btn:hover {
+  color: #ff0000;
+  border: 2px solid #ff0000;
+}
+
+@media screen and (max-width: 480px) {
+  .form-control {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #to-do {
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .submit-btn {
+    margin: 20px auto;
+    border-radius: 6px;
+    width: 100px;
+}

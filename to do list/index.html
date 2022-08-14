@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <title>To DO List</title>
+  </head>
+  <body>
+    <section class="section-center">
+      <!--form-->
+      <form class="to-do-form">
+        <p class="error"></p>
+        <h3>my to do list</h3>
+        <div class="underline"></div>
+        <div class="form-control">
+          <input type="text" id="to-do" placeholder="es. lavare i piatti" />
+          <button type="submit" class="submit-btn">submit</button>
+        </div>
+      </form>
+
+      <div class="to-do-container">
+        <div class="to-do-list"></div>
+        <button class="clear-btn">clear items</button>
+      </div>
+    </section>
+
+    <!--SCRIPT-->
+    <script src="file.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #343a40ff;
+  overflow-x: hidden;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7026ba;
+  padding: 16px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #f2f2f3;
+}
+
+/* ----Sport Center ----- */
+.list {
+  padding: 5rem 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.25rem;
+  color: #f2f2f3;
+  background-color: 34px;
+}
+
+.buttons {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 3px solid #7026ba;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  border-radius: 100px;
+  padding: 0.375rem 0.75rem;
+  color: #7026ba;
+  cursor: pointer;
+  box-shadow: 4px 5px 15px rgba(5, 6, 6, 0.4);
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #7026ba;
+  color: #f2f2f3;
+}
+
+.list-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+
+.list-item {
+  display: grid;
+  gap: 1rem 2rem;
+  max-width: 25rem;
+}
+
+.img {
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  border: 0.25rem solid #7026ba;
+  box-shadow: 4px 5px 15px rgba(5, 6, 6, 0.4);
+}
+
+.item-info .info-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.25em solid #7026ba;
+  color: #f2f2f3;
+  font-size: 22px;
+}
+
+.name {
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.price {
+  color: #fffb13;
+  font-size: 20px;
+}
+
+.item-text {
+  margin-bottom: 0;
+  padding-top: 1rem;
+  color: #f2f2f3;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+
+  .img {
+    height: 175px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-center {
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .img {
+    height: 150px;
+  }
+}

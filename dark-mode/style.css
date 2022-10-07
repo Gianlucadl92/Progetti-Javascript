@@ -1,0 +1,42 @@
+[data-theme="light"] {
+  --color-bg-primary: #d0d6df;
+  --color-text-primary: #3a3c42;
+  --color-text-secondary: #000000;
+  --color-accent: #ff6347;
+}
+
+[data-theme="dark"] {
+  --color-bg-primary: #23272a;
+  --color-text-primary: #b7b7b7;
+  --color-text-secondary: #ffffff;
+  --color-accent: #249797;
+}
+
+#toggle-theme span {
+  cursor: pointer;
+}
+
+[data-theme="light"] #toggle-theme .night {
+  display: none;
+}
+
+[data-theme="dark"] #toggle-theme .light {
+  display: none;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+}
+
+p,
+span {
+  color: var(--color-text-primary);
+}
+
+h1 {
+  color: var(--color-text-secondary);
+}
+
+button {
+  background-color: var(--color-accent);
+}
